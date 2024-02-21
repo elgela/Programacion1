@@ -10,5 +10,7 @@ ingresado imprima a que tipo de carácter esta asociado:
 ingresado.*/
 
 public class parte_6_ejercicio_11 {
-
+    public static void main(String[] args) {
+        
+    }
 }
