@@ -3,7 +3,6 @@ precargado, solicite al usuario un numero entero y lo agregue al principio del a
 0). Para ello tendrá que realizar un corrimiento a derecha (se pierde el último valor del arreglo) y
 colocar el numero en el arreglo en la posición indicada.*/
 
-import java.util.Random;
 public class parte_7_ejercicio_4 {
 
 }
