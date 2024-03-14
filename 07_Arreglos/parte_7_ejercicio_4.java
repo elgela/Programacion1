@@ -19,6 +19,14 @@ public class parte_7_ejercicio_4 {
 
         try {
 
+            cargar_arreglo_aleatorio_int(arreglo);
+            imprimir_arreglo(arreglo);
+            System.out.println("Ingrese un número: ");
+            numero = Integer.valueOf(entrada.readLine());
+            corrimiento_a_derecha(arreglo);
+            arreglo[0] = numero;
+            imprimir_arreglo(arreglo);
+
         } catch (Exception exc) {
             System.out.println(exc);
         }
@@ -27,7 +35,21 @@ public class parte_7_ejercicio_4 {
     public static void corrimiento_a_derecha(int[] arreglo) {
         int indice = MAX - 1;
         while (indice > MINVALOR - 1) {
-            
+            arreglo[indice] = arreglo[indice - 1];
+            indice--;
+        }
+    }
+
+    public static void cargar_arreglo_aleatorio_int(int[] arr) {
+        Random r = new Random();
+        for (int pos = 0; pos < MAX; pos++) {
+            arr[pos] = r.nextInt(MAXVALOR - MINVALOR + 1);
+        }
+    }
+
+    public static void imprimir_arreglo(int[] arr) {
+        for (int pos = 0; pos < MAX; pos++) {
+            System.out.println("nombre_arreglo[" + pos + "]=>: " + arr[pos]);
         }
     }
 }
