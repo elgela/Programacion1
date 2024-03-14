@@ -49,16 +49,13 @@ public class parte_6_ejercicio_11 {
         if ((caracter >= '1') && (caracter <= '9')) {
             System.out.println("Dígito");
             System.out.println('\0');
-        }
-        else if ((caracter >= 'a') && (caracter <= 'z')) {
+        } else if ((caracter >= 'a') && (caracter <= 'z')) {
             System.out.println("Letra minúscula");
             System.out.println('\0');
-        }
-        else if ((caracter >= 'A') && (caracter <= 'Z')) {
+        } else if ((caracter >= 'A') && (caracter <= 'Z')) {
             System.out.println("Letra mayúscula");
             System.out.println('\0');
-        }
-        else {
+        } else {
             System.out.println("Otro");
             System.out.println('\0');
         }
