@@ -5,11 +5,11 @@ lo imprima.*/
 import java.io.*;
 public class parte_6_ejercicio_1 {
     public static void main(String[] args) {
-        BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
-
+        
         int numero;
-
+        
         try {
+            BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("Ingrese número distinto de 0");
             numero = Integer.valueOf(entrada.readLine());
 
